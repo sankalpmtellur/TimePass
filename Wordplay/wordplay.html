@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Formation Game</title>
+    <link rel="stylesheet" href="wordplay.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Word Formation Game</h1>
+        <p>Make words using these letters:</p>
+        <h2 id="letters">____</h2>
+        
+        <input type="text" id="userInput" placeholder="Enter a word">
+        <button onclick="checkWord()">Submit</button>
+
+        <h3>Words Found:</h3>
+        <ul id="foundWords"></ul>
+        
+        <p id="progress">Words Found: 0 / ___</p>
+
+        <button id="solutionBtn" onclick="showSolutions()" disabled>Solutions</button>
+        <button id="nextLevelBtn" onclick="nextLevel()" disabled>Next Level</button>
+    </div>
+
+    <script src="wordplay.js"></script>
+</body>
+</html>

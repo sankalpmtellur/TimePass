@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#letters {
+    font-size: 32px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: #007BFF;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px 0;
+}
+
+#letters:hover {
+    transform: scale(1.1);
+}
+
+input {
+    padding: 15px;
+    width: 90%;
+    max-width: 400px;
+    margin: 15px 0;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+input:focus {
+    border-color: #FF5733;
+    box-shadow: 0px 0px 8px rgba(255, 87, 51, 0.5);
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 200px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: #007BFF;
+    color: white;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#solutionBtn {
+    background: #FF5733;
+}
+
+#solutionBtn:hover {
+    background: #e04b2d;
+}
+
+#nextLevelBtn {
+    background: #28a745;
+}
+
+#nextLevelBtn:hover {
+    background: #1f8733;
+}
+
+#foundWords {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#foundWords li {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin: 5px auto;
+    width: 40%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#progress {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    #letters {
+        font-size: 26px;
+        letter-spacing: 6px;
+    }
+
+    input {
+        width: 95%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    button {
+        width: 90%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #foundWords li {
+        width: 80%;
+        font-size: 18px;
+    }
+}
