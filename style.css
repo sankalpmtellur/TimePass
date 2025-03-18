@@ -44,8 +44,20 @@ h1 {
 
 .game-btn:first-child {
     background: #FFD700; 
-    color: #333;
+    color: #fffcfc;
     box-shadow: 0px 5px 15px rgb(255, 215, 0, 0.5);
+}
+
+.game-btn:nth-child(2) {
+    background: #f42393; 
+    color: #fffdfd;
+    box-shadow: 0px 5px 15px rgba(251, 0, 255, 0.5);
+}
+
+.game-btn:nth-child(2):hover {
+    background: #f42393;
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(251, 0, 255, 0.5);
 }
 
 .game-btn:first-child:hover {
