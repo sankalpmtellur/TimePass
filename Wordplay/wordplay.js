@@ -14,6 +14,10 @@ const wordsDatabase = [
     { letters: "raer", words: ["rear", "rare", "ear", "era", "are"] },
     { letters: "bhusl", words: ["bus", "bush", "hub", "lush", "blush"] },
     { letters: "dcnya", words: ["candy", "can", "any", "day", "and"] },
+    { letters: "adre", words: ["dare", "read", "dear", "red", "ear"] },
+    { letters: "iknrd", words: ["ink", "drink", "kin", "kind", "rid", "kid"] },
+    { letters: "ewhni", words: ["new", "win", "whine", "when", "wine", "hen"] },
+    { letters: "lydai", words: ["lid", "lady", "day", "aid", "daily", "laid", "dial"] },
     { letters: "ihts", words: ["hit", "it", "hi", "is", "hits", "his", "its", "sit", "shit"] }
 ];
 
